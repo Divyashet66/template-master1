@@ -1,5 +1,5 @@
 #!/bin/bash
-source template-master/template/config.sh
+source template-master1/template/config.sh
 git clone $git_repo
 pid=$!
 wait $pid
@@ -18,7 +18,7 @@ wait $pid
 # docker push $image
 # wait $pid
 
-# cd template-master/template
+# cd template-master1/template
 # wait $pid
 # pwd
 
@@ -28,8 +28,8 @@ wait $pid
 # cd ..
 # cd ..
 pwd
-cp -r template-master/template/k8 template-master/template/skaffold.yaml $src_folder_name
-cp -r template-master/template/Jenkinsfile $src_folder_name
+cp -r template-master1/template/k8 template-master1/template/skaffold.yaml $src_folder_name
+cp -r template-master1/template/Jenkinsfile $src_folder_name
 
 cd $src_folder_name
 pwd

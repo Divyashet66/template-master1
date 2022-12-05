@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "springboot-app"
+  name: "java-app"
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: springboot-app
+      app: java-app
   template:
     metadata:
       labels:
-        app: springboot-app
+        app: java-app
     spec:
       containers:
-        - name: springboot-app
-          image: "gcr.io/tech-rnd-project/springboot"
+        - name: java-app
+          image: "gcr.io/tech-rnd-project/java"
           ports:
             - containerPort: 8080
