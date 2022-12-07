@@ -1,5 +1,5 @@
 #!/bin/sh -x
-cd template-master/master/modules
+cd template-master1/master/modules
 echo "-----------------------------------------------------------------------------------"
 echo "Starting Creating Job"
 echo "-----------------------------------------------------------------------------------"
